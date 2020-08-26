@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+   /*comienzo de nav bar */
+    nav{
+        height: 65px;
+        width: 100%;
+        padding: 15px;
+        background-color: #2D2D2D;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link{
+        color: white;
+        padding: 0 !important;
+    }
+    .navlinks{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: auto 0;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .navlinks li {
+        margin: auto 25px;
+    }
+    .menu{
+        height: 100%;
+        background-color: #2D2D2D;
+        top: 65px;
+        z-index: 10;
+        opacity: 2;
+    }
+    .menu .nav-link{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 15px 0;
+    }
+    .card{
+        box-shadow: 10px 10px 15px rgba(0,0,0,.1);
+    }
+    a:hover{
+        color: #0088a9
+    }
+/*fin de nav bar */
+/* Comienzo de header */
+header .Textos{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+header .Textos span{
+    font-weight: 100;
+}
+header{
+    background: url(https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+    /* final de header */
+    
+.tarjetas{
+    margin: 20px auto;
+    width: 100%;
+}
+/* Footer */
+.titulofo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    grid-column:1/4;
+}
+.footerUl{
+    grid-column: 1/2;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+
+}
+.footerUl li{
+    padding: 0px 15px 0 0;
+}
+.footerUl a{
+    color: white;
+    text-decoration: none;
+}
+.footerUl a:hover{
+    color: #0088a9;
+}
+.Contacto{
+    grid-column: 2/3;
+    text-align: center;
+}
+.app{
+    grid-column: 3 ;
+    text-align: center;
+ }
+ .app img{
+     width: 200px;
+ }
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   color: white;
+    margin: 0; 
+    padding: 0;   
+    height:100%;
+    width: 100%;
+    margin: 0;
+    background-color: #2D2D2D;
+    padding-bottom: 20px;
+}
+/* Footer ends */
+
+@media(max-width: 540px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+    }
+    .footerUl{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .Contacto{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .app{
+        grid-row: 4;
+        grid-column: 1;
+    }
+}
+
+@media(max-width: 780px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    .footerUl{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .Contacto{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .app{
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+    .app img{
+        width: 200px;
+    }
+}
